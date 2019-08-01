@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<body>
+
+<h1>Upload Status</h1>
+
+<div th:if="${message}">
+    <h2 th:text="${message}"/>
+</div>
+
+<div th:if="${not #lists.isEmpty(results)}">
+    <h2>Please Check the results here in the folder</h2>
+    <table class="table table-striped">
+        <tr>
+            <th>File Name</th>
+        </tr>
+        <tr th:each="result : ${results}">
+            <td th:text="${result}"></td>
+        </tr>
+    </table>
+</div>
+
+<a href="/">Go back</a>
+</body>
+</html>
