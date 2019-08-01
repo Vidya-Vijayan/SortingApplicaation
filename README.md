@@ -15,8 +15,8 @@ line separated text
 file which has the sorted content of the input file.
 
 Steps to run::::
-- Git clone <repository url>
-- cd <project location in the system>
+- Git clone ?repository url?
+- cd ?project location in the system?
 - mvn clean package (To Build)
 - java -jar target/spring-boot-file-upload-1.0.jar (To run)
 - Check the application in browser : http://localhost:8080/
